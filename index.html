@@ -5,8 +5,123 @@
     <title>HTML Academy: Барбершоп</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <h2>Средства для ухода</h2>
+      <div class="breadcrumps">
+        <ul>
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Средства для ухода</a>
+          </li>
+      </div>
+      <form name="manufacturers">
+        <h3>Производители:</h3>
+        <input type="checkbox" checked>Baxter of California <!-- Зачем их оборачивают в label, нужно ли делать это здесь? -->
+        <input type="checkbox">Mr Hatty
+        <input type="checkbox" checked>Suavecito
+        <input type="checkbox">Malin+Goetz
+        <input type="checkbox">Murray's
+        <input type="checkbox" checked>American Crew
+      </form>
+      <form name="products-groups">
+        <h3>Группы товаров:</h3>
+        <input type="radio" name="product-type" value="razors" checked>Бритвенные принадлежности
+        <input type="radio" name="product-type" value="care-preparations">Средства для ухода
+        <input type="radio" name="product-type" value="accessories">Аксессуары
+      </form>
+      <article class="product">
+        <img src="http://placehold.it/150x100">
+        <p>Набор для путешествий &laquo;Baxter of California&raquo;</p>
+        <p class="price">2 900 руб.</p>
+        <a class="button" href="#">Купить</a>
+      </article>
+      <article class="product">
+        <img src="http://placehold.it/150x100">
+        <p>Увлажняющий кондиционер &laquo;Baxter of California&raquo;</p>
+        <p class="price">750 руб.</p>
+        <a class="button" href="#">Купить</a>
+      </article>
+      <article class="product">
+        <img src="http://placehold.it/150x100">
+        <p>Гель для волос &laquo;SUAVECITO&raquo;</p>
+        <p class="price">290 руб.</p>
+        <a class="button" href="#">Купить</a>
+      </article>
+      <article class="product">
+        <img src="http://placehold.it/150x100">
+        <p>Глина для укладки волос &laquo;AMERICAN CREW&raquo;</p>
+        <p class="price">500 руб.</p>
+        <a class="button" href="#">Купить</a>
+      </article>
+      <article class="product">
+        <img src="http://placehold.it/150x100">
+        <p>Гель для волос &laquo;AMERICAN CREW&raquo;</p>
+        <p class="price">300 руб.</p>
+        <a class="button" href="#">Купить</a>
+      </article>
+      <article class="product">
+        <img src="http://placehold.it/150x100">
+        <p>Набор для бритья &laquo;Baxter of California&raquo;</p>
+        <p class="price">3 900 руб.</p>
+        <a class="button" href="#">Купить</a>
+      </article>
+      <div class="paginator">
+        <a href="#">1</a>
+        <a class="current" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+      </div>
+    </main>
+    <footer>
+      <div class="main-contacts">
+        <p>
+          Барбершоп "Бородинский"<br>
+          Адрес:Г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/18<br>
+          <a href="#">Как нас найти?</a>
+          Телефон: +7 (495) 666-02-66
+        </p>
+      </div>
+      <div class="social">
+        <p>Давайте дружить!</p>
+        <a class="social vk" href="#"></a>
+        <a class="social fb" href="#"></a>
+        <a class="social inst" href="#"></a>
+      </div>
+      <div class="developed-by">
+        <p>Разработано</p>
+        <a class="button" href="#">htmlacademy.ru</a>
+      </div>
+    </footer>
   </body>
 </html>
