@@ -1,0 +1,11 @@
+Body:
+
+PTSans Narrow Bold
+14px
+интерлиньяж 24 px
+
+H1
+30px 
+
+h2
+24 px
