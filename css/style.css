@@ -1,5 +1,20 @@
+@font-face {
+  font-family:"PTSans Narrow";
+  src:url("../fonts/web/ptsansnarrow.woff") format("woff"),
+  url("../fonts/web/ptsansnarrow.woff2") format("woff2");
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:"PTSans Narrow Bold";
+  src:url("../fonts/web/ptsansnarrowbold.woff") format("woff"),
+  url("../fonts/web/ptsansnarrowbold.woff2") format("woff2");
+  font-weight:bold;
+  font-style:normal;
+}
+
 body {
-  font-family:"PTSans", Narrow;
+  font-family:"PTSans Narrow Bold";
   font-weight:bold;
   font-size:14px;
   line-height:24px;
@@ -9,4 +24,114 @@ h1 {
 }
 h2 {
   font-size:24px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  margin-bottom:55px;
+
+}
+.item-header{
+  margin-bottom:60px;
+}
+.container{
+  width:940px;
+  margin:0 auto;
+  padding:0 10px;
+}
+.main-navigation{
+  width:780px;
+  float:left;
+}
+.main-navigation ul{
+  margin:0px;
+  padding:4px;
+}
+.main-navigation ul li{
+  display:inline;
+  margin-right:10px;
+}
+.user-block{
+  width:140px;
+  float:right;
+}
+.breadcrumps{
+  margin-bottom:55px;
+}
+.breadcrumps ul{
+  margin:0;
+  padding:4px;
+}
+.breadcrumps ul li{
+  display:inline;
+  margin-right:10px;
+}
+.goods{
+  width:220px;
+  float:left;
+  /*display:inline-block;*/
+}
+.article-wrapper{
+  width:700px;
+  float:left;
+  margin-bottom:45px;
+}
+.product{
+  float:left;
+  width:220px;
+  display:inline-block;
+  margin-right:20px;
+}
+.product:nth-child(3n){
+  margin-right:0px;
+}
+.product p{
+  margin-left:20px;
+}
+.paginator{
+  width:220px;
+}
+.main-contacts{
+  width:310px;
+  float:left;
+  margin-right:90px;
+}
+.social-wrapper{
+  width:140px;
+  float:left;
+  margin-right:260px;
+}
+.developed-by{
+  width:140px;
+  float:left;
+}
+
+/*Конец shop'a, начало item'a*/
+.gallery{
+  width:460px;
+  float:left;
+  margin-right:90px;
+  margin-bottom:50px;
+}
+.gallery-big{
+  margin-bottom:20px;
+}
+.image-link{
+  display:inline-block;
+  margin-right:20px;
+}
+.image-link:last-child{
+  margin-right:0px;
+}
+.columns{
+  width:390px;
+  float:left;
+}
+.columns ul{
+  padding-left:20px;
+  margin:0;
 }

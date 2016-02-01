@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -36,12 +36,12 @@
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container clearfix">
         <h1>Средства для ухода</h1>
         <div class="breadcrumps">
           <ul>
             <li>
-              <a href="#">Главная</a>
+              <a href="#">Главная</a> <!--Как-то сделать так, чтобы в первой опции не было ромбика -->
             </li>
             <li>
               <a href="#">Магазин</a>
@@ -51,68 +51,71 @@
             </li>
           </ul>
         </div>
-        <form name="manufacturers">
-          <h3>Производители:</h3>
-          <label><input type="checkbox" name="companies-names" checked>Baxter of California</label> <!--добавить имена инпутам -->
-          <label><input type="checkbox" name="companies-names" >Mr Hatty</label>
-          <label><input type="checkbox" name="companies-names"  checked>Suavecito</label>
-          <label><input type="checkbox" name="companies-names" >Malin+Goetz</label>
-          <label><input type="checkbox" name="companies-names" >Murray's</label>
-          <label><input type="checkbox" name="companies-names" checked>American Crew</label>
-          <h3>Группы товаров:</h3>
-          <div class="goods"> <!--СНАРУЖИ ФОРМЫ ИЛИ ВНУТРИ? -->
+        <div class="goods">
+          <form name="manufacturers">
+            <h3>Производители:</h3>
+            <label><input type="checkbox" name="companies-names" checked>Baxter of California</label> <!--добавить имена инпутам -->
+            <br>
+            <label><input type="checkbox" name="companies-names" >Mr Hatty</label>
+            <br>
+            <label><input type="checkbox" name="companies-names"  checked>Suavecito</label>
+            <br>
+            <label><input type="checkbox" name="companies-names" >Malin+Goetz</label>
+            <br>
+            <label><input type="checkbox" name="companies-names" >Murray's</label>
+            <br>
+            <label><input type="checkbox" name="companies-names" checked>American Crew</label>
+            <h3>Группы товаров:</h3>
             <label><input type="radio" name="product-type" value="razors" checked>Бритвенные принадлежности</label>
+            <br>
             <label><input type="radio" name="product-type" value="care-preparations">Средства для ухода</label>
+            <br>
             <label><input type="radio" name="product-type" value="accessories">Аксессуары</label>
-          </div>
-        </form>
+            <br>
+            <label><input type="submit" name="show-goods" value="Показать"></label>
+          </form>
+        </div>
         <div class="article-wrapper">
           <article class="product">
-            <a class="image-link" href="#"><img src="img/Layer 38.png" alt="Набор для путешествий &laquo;Baxter of California&raquo;"></a>
-            <a class="name-link" href="#">Набор для путешествий &laquo;Baxter of California&raquo;</a>
+            <a class="image-link" href="#"><img src="img/Layer 38.png" alt="Набор для путешествий &laquo;Baxter of California&raquo;" width:"220px"></a>
+            <p><a class="name-link" href="#">Набор для путешествий <br> &laquo;Baxter of California&raquo;</a></p>
             <div class="price-div">
-              <p class="price">2 900 руб.</p>
-              <a class="button" href="#">Купить</a>
+            <p class="price">2 900 руб.<a class="button" href="#">Купить</a></p>
             </div>
           </article>
           <article class="product">
-            <a class="image-link" href="#"><img src="img/Layer 30.png" alt="Увлажняющий кондиционер &laquo;Baxter of California&raquo;"></a>
-            <a class="name-link" href="#">Увлажняющий кондиционер &laquo;Baxter of California&raquo;</a>
+            <a class="image-link" href="#"><img src="img/Layer 30.png" alt="Увлажняющий кондиционер &laquo;Baxter of California&raquo;" width:"220px"></a>
+            <p><a class="name-link" href="#">Увлажняющий кондиционер <br> &laquo;Baxter of California&raquo;</a></p>
             <div class="price-div">
-              <p class="price">750 руб.</p>
-              <a class="button" href="#">Купить</a>
+              <p class="price">750 руб.<a class="button" href="#">Купить</a></p>
             </div>
           </article>
           <article class="product">
-            <a class="image-link" href="#"><img src="img/Layer 39.png" alt="Гель для волос &laquo;SUAVECITO&raquo;"></a>
-            <a class="name-link" href="#">Гель для волос &laquo;SUAVECITO&raquo;</a>
+            <a class="image-link" href="#"><img src="img/Layer 39.png" alt="Гель для волос &laquo;SUAVECITO&raquo;" width:"220px"></a>
+            <p><a class="name-link" href="#">Гель для волос <br> &laquo;SUAVECITO&raquo;</a></p>
             <div class="price-div">
-              <p class="price">290 руб.</p>
-              <a class="button" href="#">Купить</a>
+              <p class="price">290 руб.<a class="button" href="#">Купить</a></p>
             </div>
           </article>
           <article class="product">
-            <a class="image-link" href="#"><img src="img/Layer 32.png" alt="Глина для укладки волос &laquo;AMERICAN CREW&raquo;"></a>
-            <a class="name-link" href="#">Глина для укладки волос &laquo;AMERICAN CREW&raquo;</a>
+            <a class="image-link" href="#"><img src="img/Layer 32.png" alt="Глина для укладки волос &laquo;AMERICAN CREW&raquo;" width:"220px"></a>
+            <p><a class="name-link" href="#">Глина для укладки волос <br> &laquo;AMERICAN CREW&raquo;</a></p>
             <div class="price-div">
-              <p class="price">500 руб.</p>
-              <a class="button" href="#">Купить</a>
+              <p class="price">500 руб.<a class="button" href="#">Купить</a></p>
             </div>
           </article>
           <article class="product">
-            <a class="image-link" href="#"><img src="img/Layer 33.png" alt="Гель для волос &laquo;AMERICAN CREW&raquo;"></a>
-            <a class="name-link" href="#">Гель для волос &laquo;AMERICAN CREW&raquo;</a>
+            <a class="image-link" href="#"><img src="img/Layer 33.png" alt="Гель для волос &laquo;AMERICAN CREW&raquo; width:"220px""></a>
+            <p><a class="name-link" href="#">Гель для волос <br> &laquo;AMERICAN CREW&raquo;</a></p>
             <div class="price-div">
-              <p class="price">300 руб.</p>
-              <a class="button" href="#">Купить</a>
+              <p class="price">300 руб.<a class="button" href="#">Купить</a></p>
             </div>
           </article>
           <article class="product">
-            <a class="image-link" href="#"><img src="img/Layer 42.png" alt="Набор для бритья &laquo;Baxter of California&raquo;"></a>
-            <a class="name-link" href="#">Набор для бритья &laquo;Baxter of California&raquo;</a>
+            <a class="image-link" href="#"><img src="img/Layer 42.png" alt="Набор для бритья &laquo;Baxter of California&raquo;" width:"220px"></a>
+            <p><a class="name-link" href="#">Набор для бритья <br> &laquo;Baxter of California&raquo;</a></p>
             <div class="price-div">
-              <p class="price">3 900 руб.</p>
-              <a class="button" href="#">Купить</a>
+              <p class="price">3 900 руб.<a class="button" href="#">Купить</a></p>
             </div>
           </article>
           <div class="paginator">
@@ -125,7 +128,7 @@
       </div>
     </main>
     <footer>
-      <div class="container">
+      <div class="container clearfix">
         <div class="main-contacts">
           <p>
             Барбершоп "Бородинский"<br>
@@ -134,7 +137,7 @@
             Телефон: +7 (495) 666-02-66
           </p>
         </div>
-        <div class="social">
+        <div class="social-wrapper">
           <p>Давайте дружить!</p>
           <a class="social vk" href="#"></a>
           <a class="social fb" href="#"></a>
