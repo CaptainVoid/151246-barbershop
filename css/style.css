@@ -12,7 +12,11 @@
   font-weight:bold;
   font-style:normal;
 }
-
+img{
+  vertical-align: middle;
+  max-width:100%;
+  height: auto;
+}
 body {
   font-family:"PTSans Narrow Bold";
   font-weight:bold;
@@ -76,7 +80,7 @@ h2 {
   /*display:inline-block;*/
 }
 .article-wrapper{
-  width:700px;
+  width:720px;
   float:left;
   margin-bottom:45px;
 }
@@ -89,11 +93,13 @@ h2 {
 .product:nth-child(3n){
   margin-right:0px;
 }
-.product p{
+.name-wrapper{
   margin-left:20px;
 }
 .paginator{
   width:220px;
+  margin-top:45px;
+  float:left;
 }
 .main-contacts{
   width:310px;
@@ -120,9 +126,13 @@ h2 {
 .gallery-big{
   margin-bottom:20px;
 }
+
 .image-link{
-  display:inline-block;
+  float:left;
   margin-right:20px;
+}
+.gallery-small .image-link{
+  width:140px;
 }
 .image-link:last-child{
   margin-right:0px;
@@ -134,4 +144,8 @@ h2 {
 .columns ul{
   padding-left:20px;
   margin:0;
+}
+.articul span{
+  float:right;
+
 }
